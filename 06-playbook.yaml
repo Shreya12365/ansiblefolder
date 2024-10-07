@@ -1,0 +1,13 @@
+- name: varibales  from prompt #giving input/var as argument while running playbook in server
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your Username
+    Private: false
+  - name: PASSWORD
+    prompt: please enter your passwor
+    Private: true
+  tasks:
+  - name: printing variables
+    ansible.builtin.debud:
+      msg: "username: {{USERNAME}}, password: {{PASSWORD}}"
