@@ -1,6 +1,6 @@
 - name: variable in ansible
   hosts: mongodb
-  cars:
+  vars:
     Course: devops
     Trainer: Disha
     Duration: 50 hours
