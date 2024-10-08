@@ -1,0 +1,6 @@
+- name: variables from commond line
+  hosts: mongodb
+  tasks:
+  - name: print variable from commondline
+    ansible.builtin.debug:
+      msg: "the value of variable course is {{COURSE}}"
