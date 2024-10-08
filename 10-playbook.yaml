@@ -1,14 +1,14 @@
-- name: ansible variable datatypes
+- name: ansible variable datatypes # here without conevrting datatypes we can define datatypes
   hosts: localhost
   vars:
-  - AGE: 30
-  - NAME: Raj
-  - isDevOps: True
-  - SKILLS:
+  - AGE: 30 #number
+  - NAME: Raj #string
+  - isDevOps: True #boolean
+  - SKILLS: #skills
     - DevOps
     - AWS
     - Docker
-  - EXPERIENCE:
+  - EXPERIENCE: #map
     - DevOps: 7
     - AWS: 5
     - Docker: 4
