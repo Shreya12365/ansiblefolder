@@ -1,2 +1,6 @@
 [mongodb]
 172.31.42.246
+
+[mongodb:vars]
+MONGO_USERNAME=mongoadmin
+MONGO_DB=categories
