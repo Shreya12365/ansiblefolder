@@ -1,11 +1,11 @@
-- name: install and run nigix
+- name: install and run nigix # this script is for installing nginx in node
   hosts: mongodb
   become: yes
   tasks: 
   - name: Install NGINX
     ansible.builtin.yum:
       name: nginx
-      state: installed
+      state: installed # here state is installed so nginx package will get installed
   - name: start nginx
     ansible.builtin.service:
       name: nginx

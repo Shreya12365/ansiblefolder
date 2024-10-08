@@ -1,0 +1,11 @@
+- name: Install packages
+  hosts: mongodb
+  become: yes # to get sudo user to install packages
+  tasks:
+  - name: install packages
+    ansible.builtin.yum:
+      name: "{{item}}"
+      state: installed
+    loop:
+    - nginx
+    - postfix
