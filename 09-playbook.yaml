@@ -3,4 +3,4 @@
   tasks:
   - name: print variable from commondline
     ansible.builtin.debug:
-      msg: "the value of variable course is {{COURSE}}"
+      msg: "the value of variable course is {{COURSE}}" #course var shoud be declared when running playbook in server
